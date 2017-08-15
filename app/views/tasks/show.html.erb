@@ -1,0 +1,6 @@
+<h3><%= @task.name %></h3>
+<h2><%= @task.completed %></h2>
+
+
+<%= link_to 'Back to all tasks', tasks_path %>
+<%= link_to 'Destroy this task', task_to_delete_path(@task), method: :delete %>
